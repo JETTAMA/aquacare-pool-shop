@@ -9,7 +9,10 @@ param(
 $ErrorActionPreference = "Stop"
 
 gcloud config set project $ProjectId
-gcloud services enable run.googleapis.com cloudbuild.googleapis.com
+gcloud services enable `
+    run.googleapis.com `
+    cloudbuild.googleapis.com `
+    artifactregistry.googleapis.com
 gcloud run deploy $ServiceName `
     --source . `
     --region $Region `
