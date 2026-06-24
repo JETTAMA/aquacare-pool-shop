@@ -38,6 +38,10 @@
       <a href="#services">Services</a>
       <a href="#about">About Us</a>
       <a href="#contact">Contact</a>
+      <button class="cart-trigger" type="button" aria-label="Open shopping cart">
+        <span>Cart</span>
+        <span class="cart-count" aria-live="polite">0</span>
+      </button>
       <a class="nav-cta" href="https://shopee.com.my/search?keyword=swimming%20pool%20supplies" target="_blank" rel="noopener">
         Visit Shopee
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
@@ -127,100 +131,143 @@
         </div>
         <div class="category-tabs" role="tablist" aria-label="Product categories">
           <button class="active" type="button" data-filter="all">All products</button>
-          <button type="button" data-filter="chemicals">Chemicals</button>
-          <button type="button" data-filter="cleaning">Cleaning</button>
           <button type="button" data-filter="equipment">Equipment</button>
+          <button type="button" data-filter="fittings">Fittings</button>
+          <button type="button" data-filter="cleaning">Cleaning</button>
+          <button type="button" data-filter="commercial">Commercial</button>
         </div>
       </div>
 
       <div class="product-grid">
-        <article class="product-card" data-category="chemicals">
-          <div class="product-image chemical-bg">
+        <article class="product-card" data-category="equipment">
+          <div class="product-image">
             <span class="product-badge">BEST SELLER</span>
-            <div class="bucket">
-              <span class="bucket-handle"></span>
-              <span class="bucket-label">POOL<br><b>CHLORINE</b><small>GRANULES</small></span>
-            </div>
+            <img src="assets/products/pool-pump.webp" alt="Professional swimming pool circulation pump" loading="lazy">
           </div>
           <div class="product-info">
-            <span class="product-type">WATER CARE</span>
-            <h3>Pool Chlorine Granules</h3>
-            <p>Fast-dissolving chlorine for clean, hygienic pool water.</p>
+            <span class="product-type">CIRCULATION</span>
+            <h3>Swimming Pool Pump</h3>
+            <p>Efficient circulation pump for residential and commercial pools.</p>
             <div class="product-footer">
-              <span class="price">From RM 28.90</span>
-              <a href="https://shopee.com.my/search?keyword=swimming%20pool%20chlorine%20granules" target="_blank" rel="noopener" aria-label="Buy Pool Chlorine Granules on Shopee">
-                Buy on Shopee <span>↗</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="cleaning">
-          <div class="product-image cleaning-bg">
-            <div class="skimmer">
-              <span class="skimmer-net"></span>
-              <span class="skimmer-pole"></span>
-            </div>
-          </div>
-          <div class="product-info">
-            <span class="product-type">CLEANING</span>
-            <h3>Heavy-Duty Leaf Skimmer</h3>
-            <p>Wide, durable net for quick removal of leaves and debris.</p>
-            <div class="product-footer">
-              <span class="price">From RM 19.90</span>
-              <a href="https://shopee.com.my/search?keyword=swimming%20pool%20leaf%20skimmer" target="_blank" rel="noopener" aria-label="Buy Heavy-Duty Leaf Skimmer on Shopee">
-                Buy on Shopee <span>↗</span>
-              </a>
+              <span class="price">From RM 850</span>
+              <button class="add-cart" type="button" data-id="pool-pump" data-name="Swimming Pool Pump" data-price="850" data-image="assets/products/pool-pump.webp">Add to cart</button>
             </div>
           </div>
         </article>
 
         <article class="product-card" data-category="equipment">
-          <div class="product-image equipment-bg">
-            <span class="product-badge new">NEW</span>
-            <div class="tester">
-              <div class="tester-screen">7.4<small>pH</small></div>
-              <span class="tester-button"></span>
-            </div>
+          <div class="product-image">
+            <img src="assets/products/sand-filter.webp" alt="Swimming pool sand filter with multiport valve" loading="lazy">
           </div>
           <div class="product-info">
-            <span class="product-type">TESTING</span>
-            <h3>Digital pH Water Tester</h3>
-            <p>Quick, accurate readings to keep your pool perfectly balanced.</p>
+            <span class="product-type">FILTRATION</span>
+            <h3>Pool Sand Filter</h3>
+            <p>Durable high-flow filter for consistently clear pool water.</p>
             <div class="product-footer">
-              <span class="price">From RM 25.00</span>
-              <a href="https://shopee.com.my/search?keyword=digital%20ph%20tester%20swimming%20pool" target="_blank" rel="noopener" aria-label="Buy Digital pH Water Tester on Shopee">
-                Buy on Shopee <span>↗</span>
-              </a>
+              <span class="price">From RM 680</span>
+              <button class="add-cart" type="button" data-id="sand-filter" data-name="Pool Sand Filter" data-price="680" data-image="assets/products/sand-filter.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="equipment">
+          <div class="product-image">
+            <span class="product-badge new">NEW</span>
+            <img src="assets/products/heat-pump.webp" alt="Energy-efficient swimming pool heat pump" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-type">HEATING</span>
+            <h3>Pool Heat Pump</h3>
+            <p>Energy-efficient heating for comfortable swimming year-round.</p>
+            <div class="product-footer">
+              <span class="price">From RM 5,800</span>
+              <button class="add-cart" type="button" data-id="heat-pump" data-name="Pool Heat Pump" data-price="5800" data-image="assets/products/heat-pump.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="equipment">
+          <div class="product-image">
+            <img src="assets/products/salt-chlorinator.webp" alt="Swimming pool salt chlorinator system" loading="lazy">
+          </div>
+          <div class="product-info">
+            <span class="product-type">SANITISING</span>
+            <h3>Salt Chlorinator</h3>
+            <p>Automated salt-water sanitising for softer, cleaner pool water.</p>
+            <div class="product-footer">
+              <span class="price">From RM 2,200</span>
+              <button class="add-cart" type="button" data-id="salt-chlorinator" data-name="Salt Chlorinator" data-price="2200" data-image="assets/products/salt-chlorinator.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="fittings">
+          <div class="product-image"><img src="assets/products/skimmer-box.webp" alt="White swimming pool skimmer box" loading="lazy"></div>
+          <div class="product-info">
+            <span class="product-type">POOL FITTINGS</span>
+            <h3>Pool Skimmer Box</h3>
+            <p>Heavy-duty wall skimmer for effective surface debris collection.</p>
+            <div class="product-footer">
+              <span class="price">From RM 180</span>
+              <button class="add-cart" type="button" data-id="skimmer-box" data-name="Pool Skimmer Box" data-price="180" data-image="assets/products/skimmer-box.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="fittings">
+          <div class="product-image"><img src="assets/products/wall-inlet.webp" alt="Swimming pool wall inlet return fittings" loading="lazy"></div>
+          <div class="product-info">
+            <span class="product-type">POOL FITTINGS</span>
+            <h3>Pool Wall Inlet</h3>
+            <p>Directional return inlet for balanced water circulation.</p>
+            <div class="product-footer">
+              <span class="price">From RM 35</span>
+              <button class="add-cart" type="button" data-id="wall-inlet" data-name="Pool Wall Inlet" data-price="35" data-image="assets/products/wall-inlet.webp">Add to cart</button>
             </div>
           </div>
         </article>
 
         <article class="product-card" data-category="cleaning">
-          <div class="product-image brush-bg">
-            <div class="brush">
-              <span class="brush-head"></span>
-              <span class="brush-bristles"></span>
-              <span class="brush-pole"></span>
-            </div>
-          </div>
+          <div class="product-image"><img src="assets/products/cleaning-accessories.webp" alt="Pool brush vacuum head and telescopic pole set" loading="lazy"></div>
           <div class="product-info">
             <span class="product-type">CLEANING</span>
-            <h3>Pool Wall Brush</h3>
-            <p>Strong curved brush for tiles, walls and hard-to-reach corners.</p>
+            <h3>Brush & Vacuum Head Set</h3>
+            <p>Complete everyday cleaning set for pool floors and walls.</p>
             <div class="product-footer">
-              <span class="price">From RM 15.90</span>
-              <a href="https://shopee.com.my/search?keyword=swimming%20pool%20wall%20brush" target="_blank" rel="noopener" aria-label="Buy Pool Wall Brush on Shopee">
-                Buy on Shopee <span>↗</span>
-              </a>
+              <span class="price">From RM 89</span>
+              <button class="add-cart" type="button" data-id="cleaning-set" data-name="Brush & Vacuum Head Set" data-price="89" data-image="assets/products/cleaning-accessories.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="commercial">
+          <div class="product-image"><img src="assets/products/racing-lane.webp" alt="Blue and white swimming pool racing lane rope" loading="lazy"></div>
+          <div class="product-info">
+            <span class="product-type">COMPETITION</span>
+            <h3>Pool Racing Lane</h3>
+            <p>Wave-reducing lane divider for training and competition pools.</p>
+            <div class="product-footer">
+              <span class="price">From RM 520</span>
+              <button class="add-cart" type="button" data-id="racing-lane" data-name="Pool Racing Lane" data-price="520" data-image="assets/products/racing-lane.webp">Add to cart</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="cleaning">
+          <div class="product-image"><img src="assets/products/vacuum-hose.webp" alt="Heavy-duty blue swimming pool vacuum hose" loading="lazy"></div>
+          <div class="product-info">
+            <span class="product-type">CLEANING</span>
+            <h3>Heavy-Duty Vacuum Hose</h3>
+            <p>Flexible corrugated hose with swivel cuffs in multiple lengths.</p>
+            <div class="product-footer">
+              <span class="price">From RM 120</span>
+              <button class="add-cart" type="button" data-id="vacuum-hose" data-name="Heavy-Duty Vacuum Hose" data-price="120" data-image="assets/products/vacuum-hose.webp">Add to cart</button>
             </div>
           </div>
         </article>
       </div>
 
-      <a class="view-all" href="https://shopee.com.my/search?keyword=swimming%20pool%20supplies" target="_blank" rel="noopener">
-        View all products on Shopee <span>↗</span>
-      </a>
+      <p class="price-note">Prices shown are starting estimates. Final price may vary by size, capacity and installation requirements.</p>
     </section>
 
     <section class="services section" id="services">
@@ -315,6 +362,30 @@
     </div>
     <span class="copyright">© <span id="year"></span> MPE Pool Care &amp; Supplies</span>
   </footer>
+
+  <div class="cart-overlay" aria-hidden="true"></div>
+  <aside class="cart-drawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <div>
+        <span class="eyebrow"><span></span> Your selection</span>
+        <h2>Shopping cart</h2>
+      </div>
+      <button class="cart-close" type="button" aria-label="Close shopping cart">×</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-empty">
+      <span>⌁</span>
+      <strong>Your cart is empty</strong>
+      <p>Add pool equipment or accessories to prepare an enquiry.</p>
+    </div>
+    <div class="cart-summary">
+      <div><span>Estimated subtotal</span><strong class="cart-total">RM 0.00</strong></div>
+      <p>Final pricing and delivery will be confirmed by MPE.</p>
+      <button class="cart-checkout" type="button">Checkout via WhatsApp</button>
+      <button class="cart-clear" type="button">Clear cart</button>
+    </div>
+  </aside>
+  <div class="cart-toast" role="status" aria-live="polite">Added to cart</div>
 
   <script src="script.js"></script>
 </body>

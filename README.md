@@ -1,6 +1,6 @@
 # MPE Pool Care & Supplies
 
-A responsive product and service website for a swimming-pool maintenance business. Product buttons direct customers to Shopee Malaysia, while the contact section supports WhatsApp enquiries.
+A responsive product and service website for a swimming-pool maintenance business. It includes a filterable equipment catalogue, persistent shopping cart and WhatsApp checkout for enquiries, alongside direct access to Shopee Malaysia.
 
 ## Before going live
 
