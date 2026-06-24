@@ -1,4 +1,4 @@
-# AquaCare Pool Shop
+# MPE Pool Care & Supplies
 
 A responsive product and service website for a swimming-pool maintenance business. Product buttons direct customers to Shopee Malaysia, while the contact section supports WhatsApp enquiries.
 
