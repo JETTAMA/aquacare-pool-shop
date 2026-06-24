@@ -144,7 +144,7 @@ svg { display: block; }
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: 42% center;
   border-radius: inherit;
 }
 .photo-shade {
@@ -349,7 +349,7 @@ svg { display: block; }
   height: 100%;
   display: block;
   object-fit: cover;
-  object-position: center;
+  object-position: 56% center;
   border-radius: inherit;
   box-shadow: 0 24px 55px rgba(0,0,0,.25);
 }
