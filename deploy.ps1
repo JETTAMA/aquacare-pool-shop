@@ -3,7 +3,7 @@ param(
     [string]$ProjectId,
 
     [string]$Region = "asia-southeast1",
-    [string]$ServiceName = "aquacare-pool-shop"
+    [string]$ServiceName = "mpe-pool-shop"
 )
 
 $ErrorActionPreference = "Stop"

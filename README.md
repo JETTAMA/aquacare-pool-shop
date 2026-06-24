@@ -31,7 +31,7 @@ gcloud auth login
 .\deploy.ps1 -ProjectId "YOUR_GOOGLE_CLOUD_PROJECT_ID"
 ```
 
-The script deploys to the Singapore region (`asia-southeast1`) by default and prints the public website URL when complete.
+The script deploys the `mpe-pool-shop` service to the Singapore region (`asia-southeast1`) by default and prints the public website URL when complete.
 
 To select another region:
 
