@@ -7,7 +7,7 @@ A responsive product and service website for a swimming-pool maintenance busines
 Update these sample details in `index.html`:
 
 - Business name and logo text
-- WhatsApp and telephone number (`+60 12-345 6789`)
+- WhatsApp and telephone number (`016-261 6781`)
 - Product names and prices
 - Individual Shopee product links
 - Service hours and company description
