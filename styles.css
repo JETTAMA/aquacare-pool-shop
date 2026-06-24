@@ -395,13 +395,14 @@ svg { display: block; }
 .product-card.hidden { display: none; }
 .product-image { height: 245px; position: relative; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg,#eefaf9,#cbece9); }
 .product-image > img {
-  width: 100%;
-  height: 100%;
+  width: 86%;
+  height: 86%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
   transition: transform .35s ease;
 }
-.product-card:hover .product-image > img { transform: scale(1.035); }
+.product-card:hover .product-image > img { transform: scale(1.02); }
 .chemical-bg { background: radial-gradient(circle at 35% 28%, #fff 0 4%, transparent 5%), linear-gradient(150deg,#dff7f3,#82d8d2); }
 .cleaning-bg { background: linear-gradient(145deg, #eaf9f7, #b8e6e1); }
 .equipment-bg { background: linear-gradient(145deg, #dceff0, #a8d6d8); }
